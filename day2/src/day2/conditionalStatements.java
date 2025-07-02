@@ -69,7 +69,7 @@ public class conditionalStatements {
 			break;
 		default:
 			System.out.println("Invalid choice");
-			
 		}
+	//end line
 	}
 }
