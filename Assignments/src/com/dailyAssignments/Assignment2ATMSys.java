@@ -20,15 +20,19 @@ public class Assignment2ATMSys {
 		balance+=amount;
 		System.out.println("Amount deposit successful.");
 	}
+	
+	
 	public static void main(String[] args) {
 		float amount;
 		Assignment2ATMSys obj1 = new Assignment2ATMSys();
 		Scanner sc = new Scanner(System.in);
-		boolean again = true;
-		while(again) {
+//		boolean again = true;
+		
+		//performing operations
+		while(true) {
 			
 			int choice;
-			System.out.println("Enter your Choice:\n1.Check balance\n2.Withdraw cash\n3.Deposit money");
+			System.out.println("Enter your Choice:\n1.Check balance\n2.Withdraw cash\n3.Deposit money\n4.Exit");
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1:
@@ -44,12 +48,15 @@ public class Assignment2ATMSys {
 				amount = sc.nextInt();
 				obj1.depositmoney(amount);
 				break;
+			case 4:
+				System.exit(0);
 			default:
 				System.out.println("Invalid choice");
 			}
-			
-			System.out.println("Do you want to continue ? (true/false)");
-			again = sc.nextBoolean();		}
+//			
+//			System.out.println("Do you want to continue ? (true/false)");
+//			again = sc.nextBoolean();		
+			}
 		
 	}
 
