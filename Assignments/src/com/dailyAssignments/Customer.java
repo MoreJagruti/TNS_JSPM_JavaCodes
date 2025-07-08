@@ -15,7 +15,7 @@ public class Customer {
 		System.out.println("Default Values \nID : "+ID+"\nName : "+name+"\nAge : "+age);
 	}
 	
-	
+//	parameterised constructor
 	public Customer(int ID, String name ,int age) {
 		setAttribute(age, ID ,name);
 	}
