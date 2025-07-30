@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ModifyString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.err.println("Enter input String:\n");
+        System.out.println("Enter input String:\n");
         StringBuilder str = new StringBuilder(scanner.nextLine());
 
         int j = 0;
@@ -18,6 +18,6 @@ public class ModifyString {
             }
         }
 
-        System.err.println("Modified String: " + str);
+        System.out.println("Modified String: " + str);
     }
 }
